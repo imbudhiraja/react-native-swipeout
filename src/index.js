@@ -56,6 +56,12 @@ const SwipeoutBtn = createReactClass({
 
     //  apply background color
     if (btn.backgroundColor) styleSwipeoutBtn.push([{ backgroundColor: btn.backgroundColor }]);
+     
+    //  apply fontFamily
+    if (btn.fontFamily) styleSwipeoutBtn.push([{ fontFamily: btn.fontFamily }]);
+     
+    //  apply fontSize
+    if (btn.fontSize) styleSwipeoutBtn.push([{ fontFamily: btn.fontSize }]);
 
     styleSwipeoutBtn.push([{
       height: btn.height,
