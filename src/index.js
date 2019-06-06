@@ -56,13 +56,7 @@ const SwipeoutBtn = createReactClass({
 
     //  apply background color
     if (btn.backgroundColor) styleSwipeoutBtn.push([{ backgroundColor: btn.backgroundColor }]);
-     
-    //  apply fontFamily
-    if (btn.fontFamily) styleSwipeoutBtn.push([{ fontFamily: btn.fontFamily }]);
-     
-    //  apply fontSize
-    if (btn.fontSize) styleSwipeoutBtn.push([{ fontFamily: btn.fontSize }]);
-
+    
     styleSwipeoutBtn.push([{
       height: btn.height,
       width: btn.width,
@@ -79,7 +73,11 @@ const SwipeoutBtn = createReactClass({
     var styleSwipeoutBtnText = [styles.swipeoutBtnText];
 
     //  apply text color
-    if (btn.color) styleSwipeoutBtnText.push({color: btn.color });
+    if (btn.color) styleSwipeoutBtnText.push({ color: btn.color });
+    //  apply fontFamily
+    if (btn.fontFamily) styleSwipeoutBtnText.push([{ fontFamily: btn.fontFamily }]);
+    //  apply fontSize
+    if (btn.fontSize) styleSwipeoutBtnText.push([{ fontFamily: btn.fontSize }]);
 
     return (
       <NativeButton
